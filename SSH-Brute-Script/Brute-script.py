@@ -36,7 +36,7 @@ with open(input_file, 'r') as file:
         try:
             response = ssh_connect(password)
             if response == 0:
-                print(termcolor.colored(('[+] Found Password YEAH! : ' + password + ' , For Account: ' + username), 'green'))
+                print(termcolor.colored(('[+] YEAH! Found Password  : ' + password + ' , For Account: ' + username), 'green'))
                 break
             elif response == 1:
                 print('[-] Incorrect Login, try again!: ' + password)
